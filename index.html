@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7b8d0">
+<title>MI DOCTORA KIDS | Citas pediátricas</title>
+<style>
+:root{--pink:#f6b6cf;--blue:#bdeafa;--yellow:#ffe69a;--purple:#d9ccff;--ink:#38516b;--green:#c9f0df}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Trebuchet MS",system-ui,sans-serif;color:var(--ink);background:#fffafc;overflow-x:hidden}
+header{padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:16px;background:#fff;position:sticky;top:0;z-index:5;box-shadow:0 3px 18px #52627a12}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:1.2rem;color:#e66c9d}.logo{width:58px;height:58px;border-radius:20px;background:linear-gradient(135deg,var(--pink),var(--blue));display:grid;place-items:center;font-size:28px;box-shadow:0 5px 14px #e99cbd55}.logo small{font-size:9px;display:block}
+nav a{color:var(--ink);text-decoration:none;font-weight:700;margin-left:20px}nav a:hover{color:#e66c9d}
+.hero{position:relative;padding:76px 6% 66px;background:linear-gradient(125deg,#ffeaf2,#e9f8ff 55%,#fff5cf);text-align:center;overflow:hidden}
+.hero h1{font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.05;margin:12px 0;color:#e66c9d}.hero p{font-size:1.15rem;max-width:650px;margin:18px auto 26px;line-height:1.7}
+.pill{display:inline-block;background:white;border-radius:999px;padding:9px 16px;font-weight:800;color:#6a82a0;box-shadow:0 5px 18px #52627a12}
+.btn{display:inline-block;border:0;border-radius:999px;padding:15px 24px;background:#25b86a;color:#fff;text-decoration:none;font-weight:900;font-size:1rem;cursor:pointer;box-shadow:0 7px 0 #16894b;transition:.2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 0 #16894b}.float{position:absolute;font-size:clamp(25px,4vw,48px);animation:bob 3.2s ease-in-out infinite}.f1{left:8%;top:18%}.f2{right:9%;top:22%;animation-delay:.7s}.f3{left:15%;bottom:12%;animation-delay:1.1s}.f4{right:16%;bottom:10%;animation-delay:1.6s}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-13px) rotate(6deg)}}
+section{padding:58px 6%}.section-title{text-align:center;font-size:2rem;color:#e66c9d;margin:0 0 12px}.sub{text-align:center;margin:0 auto 30px;max-width:650px;line-height:1.6}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;max-width:1050px;margin:auto}.card{background:#fff;border-radius:24px;padding:24px;text-align:center;box-shadow:0 8px 28px #62728a12;border:2px solid #f8edf2;transition:.25s}.card:hover{transform:translateY(-6px)}.emoji{font-size:42px}.card h3{color:#6686ad;margin:10px 0}.card p{line-height:1.55;margin:0}
+.booking{background:linear-gradient(135deg,#eaf8ff,#fff0f6)}form{max-width:650px;margin:auto;background:#fff;padding:28px;border-radius:26px;box-shadow:0 10px 35px #52627a18;display:grid;grid-template-columns:1fr 1fr;gap:15px}
+label{font-weight:800;font-size:.92rem}input,select,textarea{width:100%;margin-top:7px;padding:13px;border:2px solid #e6edf4;border-radius:13px;font:inherit;color:var(--ink);background:#fff}input:focus,select:focus,textarea:focus{outline:3px solid #f8d5e4;border-color:#e99cbd}.full{grid-column:1/-1}textarea{min-height:85px;resize:vertical}form button{grid-column:1/-1}
+.note{text-align:center;font-size:.88rem;line-height:1.5;color:#6b7d91;margin:16px auto 0;max-width:650px}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:900px;margin:auto}.info div{background:white;border-radius:20px;padding:22px;text-align:center;box-shadow:0 6px 20px #52627a10}.info b{display:block;color:#e66c9d;margin-bottom:8px}
+footer{text-align:center;background:#fff;padding:28px 6%;line-height:1.7}footer strong{color:#e66c9d}
+.reveal{animation:appear .8s both}@keyframes appear{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:650px){header{padding:12px 4%}nav{display:none}.hero{padding:60px 5%}.f1{left:3%}.f2{right:3%}form{grid-template-columns:1fr;padding:20px}.full{grid-column:auto}section{padding:45px 5%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+ <div class="brand"><div class="logo" aria-label="Espacio para logo">🩺</div><div>MI DOCTORA KIDS<small style="display:block;color:#7891aa;font-size:.7rem;letter-spacing:1px">CONSULTORIO PEDIÁTRICO</small></div></div>
+ <nav><a href="#servicios">Bienvenida</a><a href="#citas">Reservar cita</a><a href="#contacto">Contacto</a></nav>
+</header>
+<main>
+<section class="hero">
+ <span class="float f1">☁️</span><span class="float f2">⭐</span><span class="float f3">🧸</span><span class="float f4">🌈</span>
+ <span class="pill">💗 Atención con cariño para los pequeños</span>
+ <h1>¡Hola, pequeñas sonrisas!</h1>
+ <p>En <b>MI DOCTORA KIDS</b> cuidamos la salud de tus pequeños con amor, paciencia y dedicación. Estamos felices de acompañar a tu familia.</p>
+ <a class="btn" href="#citas">📅 Solicitar una cita</a>
+</section>
+<section id="servicios">
+ <h2 class="section-title">Un espacio hecho para ellos</h2><p class="sub">Queremos que cada visita sea una experiencia cálida, tranquila y llena de confianza.</p>
+ <div class="cards">
+  <article class="card reveal"><div class="emoji">🩺</div><h3>Atención pediátrica</h3><p>Cuidado de la salud infantil en un ambiente cercano y acogedor.</p></article>
+  <article class="card reveal"><div class="emoji">💗</div><h3>Con mucho cariño</h3><p>Tratamos a cada pequeño con paciencia, respeto y ternura.</p></article>
+  <article class="card reveal"><div class="emoji">👨‍👩‍👧</div><h3>Junto a la familia</h3><p>Escuchamos a los padres y acompañamos el cuidado de sus niños.</p></article>
+ </div>
+</section>
+<section class="booking" id="citas">
+ <h2 class="section-title">¡Solicita tu cita! 🎈</h2><p class="sub">Completa los datos y enviaremos tu solicitud directamente a nuestro WhatsApp.</p>
+ <form id="bookingForm">
+  <label>Nombre del apoderado<input name="guardian" required placeholder="Tu nombre"></label>
+  <label>Nombre del niño o niña<input name="child" required placeholder="Nombre del pequeño"></label>
+  <label>Fecha preferida<input type="date" name="date" required></label>
+  <label>Hora preferida<select name="time" required><option value="">Selecciona una hora</option></select></label>
+  <label class="full">Teléfono de contacto<input name="phone" type="tel" required placeholder="Tu número de teléfono"></label>
+  <label class="full">Motivo de la cita (opcional)<textarea name="reason" placeholder="Cuéntanos brevemente el motivo de la visita"></textarea></label>
+  <button class="btn" type="submit">💬 Enviar solicitud por WhatsApp</button>
+ </form>
+ <p class="note">El envío por WhatsApp es una solicitud de cita. La cita quedará confirmada únicamente cuando el consultorio responda y confirme la disponibilidad. No incluyas información médica sensible en este formulario.</p>
+</section>
+<section id="contacto">
+ <h2 class="section-title">¡Te esperamos! 🌼</h2><div class="info">
+  <div>📍<b>Dirección</b>Urb. Los Huarangos, 4ta etapa, D-20<br>Ica, Perú</div>
+  <div>🕒<b>Horario de atención</b>Todos los días<br>6:00 a. m. – 9:00 p. m.</div>
+  <div>📱<b>WhatsApp</b><a href="https://wa.me/51920379157" style="color:#25a765;font-weight:800">+51 920 379 157</a></div>
+ </div>
+</section>
+</main>
+<footer>Hecho con 💗 para <strong>MI DOCTORA KIDS</strong> · Ica, Perú</footer>
+<script>
+const select=document.querySelector('select[name="time"]');
+for(let h=6;h<=21;h++){for(let m of (h===21?[0]:[0,30])){let v=String(h).padStart(2,'0')+':'+String(m).padStart(2,'0');let o=document.createElement('option');o.value=v;o.textContent=v;select.appendChild(o)}}
+const date=document.querySelector('input[name="date"]');let today=new Date();date.min=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
+document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);const msg=`Hola, MI DOCTORA KIDS. Quisiera solicitar una cita.%0A%0AApoderado: ${encodeURIComponent(d.get('guardian'))}%0ANiño/a: ${encodeURIComponent(d.get('child'))}%0AFecha: ${encodeURIComponent(d.get('date'))}%0AHora preferida: ${encodeURIComponent(d.get('time'))}%0ATeléfono: ${encodeURIComponent(d.get('phone'))}%0AMotivo: ${encodeURIComponent(d.get('reason')||'No especificado')}%0A%0AEntiendo que la cita queda pendiente de confirmación.`;window.open('https://wa.me/51920379157?text='+msg,'_blank','noopener');});
+</script>
+</body></html>
